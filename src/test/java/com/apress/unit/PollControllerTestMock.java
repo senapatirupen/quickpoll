@@ -15,9 +15,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import com.apress.domain.Poll;
-import com.apress.repository.PollRepository;
-import com.apress.v1.controller.PollController;
+import com.quickpoll.domain.Poll;
+import com.quickpoll.repository.PollRepository;
+import com.quickpoll.v1.controller.PollController;
 import com.google.common.collect.Lists;
 
 public class PollControllerTestMock {

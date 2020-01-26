@@ -21,10 +21,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.apress.QuickPollApplication;
-import com.apress.domain.Poll;
-import com.apress.repository.PollRepository;
-import com.apress.v1.controller.PollController;
+import com.quickpoll.QuickPollApplication;
+import com.quickpoll.domain.Poll;
+import com.quickpoll.repository.PollRepository;
+import com.quickpoll.v1.controller.PollController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = QuickPollApplication.class)
