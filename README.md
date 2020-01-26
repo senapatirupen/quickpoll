@@ -1,2 +1,2 @@
 # quickpollapp
-quick poll application
+quick poll application: Codes are in develop branch
