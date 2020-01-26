@@ -1,6 +1,5 @@
-package com.apress;
+package com.quickpoll;
 
-import com.quickpoll.QuickPollApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;

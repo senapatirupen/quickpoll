@@ -1,6 +1,5 @@
-package com.apress;
+package com.quickpoll;
 
-import com.quickpoll.QuickPollApplication;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

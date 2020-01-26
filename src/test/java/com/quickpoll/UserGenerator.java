@@ -1,4 +1,4 @@
-package com.apress;
+package com.quickpoll;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
