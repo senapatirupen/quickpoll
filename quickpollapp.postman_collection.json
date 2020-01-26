@@ -1,0 +1,712 @@
+{
+	"id": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+	"name": "quickpollapp",
+	"description": "Quick Poll Application",
+	"order": [
+		"e306e57e-cf93-3674-48ce-b21a30a4fc03",
+		"58402bcc-0070-73c0-43a4-40fddc6975b8",
+		"ca8b5804-e895-1389-8329-da7ba96190b3",
+		"f5a03b6f-b71d-a0e9-b81f-1adb02332677",
+		"b0d771ec-0c94-5458-a2be-cd9764e15d16",
+		"1361b759-c979-2963-50cd-c7d1dfaa968f",
+		"8fccdf58-2187-8ee4-f8cf-4d7cea3a7d58",
+		"4e0c9950-80e0-b978-be5f-f51a28b4a9d9",
+		"6d9635e6-18e9-2d11-7aec-f3bdcd10cdb8",
+		"b94655b2-afea-1dd5-231b-4ec916fe0c93",
+		"f3fad95a-e95c-d7f3-ff39-c8d03de66285",
+		"76b746e1-b91f-65a3-a34a-cba86e9a84a0",
+		"b22bd834-4a71-ce7b-0f55-f074c0a32828",
+		"fdf3e2db-1744-cab8-79a8-eddedf740791",
+		"4f00badc-daae-ca7d-746a-ae3751ae1716",
+		"ce8f0e24-800f-0bd5-14d5-38cd972e8ffb",
+		"c96a8671-4c69-d9a0-2c12-35d6a09d18cf",
+		"67244818-f1b7-ead0-1f38-87e028f882bd",
+		"aa277213-6e0c-732c-14e1-fddfd41c811e",
+		"59ab5946-b23f-dfbb-8cc8-6222a09225f4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1579957859512,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1361b759-c979-2963-50cd-c7d1dfaa968f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579979134642,
+			"name": "Create Poll v1 error",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "4e0c9950-80e0-b978-be5f-f51a28b4a9d9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579975043212,
+			"name": "Update Poll v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n    \"id\": 21,\n    \"question\": \"What is your favorite Car?\",\n    \"options\": [\n        {\n            \"id\": 75,\n            \"value\": \"Audi\"\n        },\n        {\n            \"id\": 76,\n            \"value\": \"Hundai\"\n        },\n        {\n            \"id\": 77,\n            \"value\": \"Ford\"\n        },\n        {\n            \"id\": 78,\n            \"value\": \"BMW\"\n        }\n    ]\n}"
+		},
+		{
+			"id": "4f00badc-daae-ca7d-746a-ae3751ae1716",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21/votes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579975273454,
+			"name": "Create Vote v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "58402bcc-0070-73c0-43a4-40fddc6975b8",
+			"headers": "Authorization: Bearer 074f55a0-1066-4751-8107-aea0d4ce499f\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 074f55a0-1066-4751-8107-aea0d4ce499f",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/oauth2/v3/polls",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"data": [],
+			"dataMode": "params",
+			"name": "http://localhost:8080/oauth2/v3/polls",
+			"description": "Generated from a curl request: \ncurl http://localhost:8080/oauth2/v3/polls -H \\\"Authorization: Bearer 77ed953e-b3b6-4ea1-820e-2e9acc702293\\\"",
+			"descriptionFormat": "html",
+			"time": 1579965524350,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "59ab5946-b23f-dfbb-8cc8-6222a09225f4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/api-docs",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579979196735,
+			"name": "swagger ui",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "aa277213-6e0c-732c-14e1-fddfd41c811e",
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "67244818-f1b7-ead0-1f38-87e028f882bd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/computeresult/?pollId=21",
+			"queryParams": [
+				{
+					"key": "pollId",
+					"value": "21",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579978522535,
+			"name": "Get Computeresult v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "6d9635e6-18e9-2d11-7aec-f3bdcd10cdb8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579977717455,
+			"name": "Get Poll v1 copy",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "76b746e1-b91f-65a3-a34a-cba86e9a84a0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v2/polls/?page=0&size=2",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579980166584,
+			"name": "Get Polls v2 sort",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "8fccdf58-2187-8ee4-f8cf-4d7cea3a7d58",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579975410389,
+			"name": "Get Poll v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "aa277213-6e0c-732c-14e1-fddfd41c811e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/api-docs",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579979196735,
+			"name": "swagger",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "b0d771ec-0c94-5458-a2be-cd9764e15d16",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579974834554,
+			"name": "Create Poll v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "b22bd834-4a71-ce7b-0f55-f074c0a32828",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v2/polls/?sort=question,asc&sort=id,desc",
+			"queryParams": [
+				{
+					"key": "sort",
+					"value": "question,asc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "sort",
+					"value": "id,desc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579980540125,
+			"name": "Get Polls v2 sort copy",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "b94655b2-afea-1dd5-231b-4ec916fe0c93",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/100",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579978650325,
+			"name": "Get Poll v1 error",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "c96a8671-4c69-d9a0-2c12-35d6a09d18cf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21/votes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579975578297,
+			"name": "Get Votes v1 copy",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "ce8f0e24-800f-0bd5-14d5-38cd972e8ffb",
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "ca8b5804-e895-1389-8329-da7ba96190b3",
+			"headers": "Authorization: bearer 074f55a0-1066-4751-8107-aea0d4ce499f\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer 074f55a0-1066-4751-8107-aea0d4ce499f",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v3/polls",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579981002807,
+			"name": "Get All Polls v3",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": []
+		},
+		{
+			"id": "ce8f0e24-800f-0bd5-14d5-38cd972e8ffb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v1/polls/21/votes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579975578297,
+			"name": "Get Votes v1",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n    \"option\": \n        {\n            \"id\": 21,\n            \"value\": \"Skoda\"\n        }\n}"
+		},
+		{
+			"id": "e306e57e-cf93-3674-48ce-b21a30a4fc03",
+			"headers": "Accept: application/json\nAuthorization: Basic cXVpY2twb2xsaU9TQ2xpZW50OnRvcF9zZWNyZXQ=\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic cXVpY2twb2xsaU9TQ2xpZW50OnRvcF9zZWNyZXQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/oauth/token",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "mickey",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "cheese",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579980959878,
+			"name": "http://localhost:8080/oauth/token",
+			"description": "Generated from a curl request: \ncurl -u quickpolliOSClient:top_secret -X POST http://localhost:8080/oauth/token -H \\\"Accept: \napplication/json\\\" -d \\\"username=mickey&password=cheese&grant_type=password\\\"",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": []
+		},
+		{
+			"id": "f3fad95a-e95c-d7f3-ff39-c8d03de66285",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v2/polls/?page=0&size=2",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1579980460479,
+			"name": "Get Polls v2 page and size",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "f5a03b6f-b71d-a0e9-b81f-1adb02332677",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8081/v1/polls",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1580017926492,
+			"name": "Get All Polls v2",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": []
+		},
+		{
+			"id": "fdf3e2db-1744-cab8-79a8-eddedf740791",
+			"headers": "Content-Type: application/json\nAuthorization: Basic bWlja2V5OmNoZWVzZQ==\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic bWlja2V5OmNoZWVzZQ==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/v2/polls",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1580011321319,
+			"name": "Get Polls v2 basic auth",
+			"description": "",
+			"collectionId": "b3f866ac-0d45-5403-db47-7d8373e397c5",
+			"responses": [],
+			"rawModeData": "{\n        \"question\": \"What is your favorite Car?\",\n        \"options\": [\n            {\n                \"value\": \"Hundai\"\n            },\n            {\n                \"value\": \"Maruti Suzuki\"\n            },\n            {\n                \"value\": \"Ford\"\n            },\n            {\n                \"value\": \"BMW\"\n            }\n        ]\n    }"
+		}
+	]
+}
